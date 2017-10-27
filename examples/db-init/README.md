@@ -5,7 +5,7 @@ This script creates in Azure:
 - A Resource Group
 - A SQL Server DB
 - Then uses the module to:
-    - Created a database
+    - Create a database
     - Initialize the DB with a script
 
 
