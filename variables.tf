@@ -32,11 +32,11 @@ variable "tags" {
 }
 
 variable init_script_file {
-  description = "SQL Script to seed the database."
+  description = "SQL Script file name to seed the database. Example: db-init.sql."
 }
 
 variable log_file {
-  description = "Log file to create with the seeding results."
+  description = "Log file name to create with the seeding results."
   default     = "db-init.log"
 }
 
