@@ -1,0 +1,12 @@
+# Terraform state
+*.tfstate
+*.tfstate.backup
+
+# Modules directory
+.terraform/
+
+# Log files
+*.log
+
+# Credentials files
+**/credential.tf
