@@ -11,7 +11,7 @@ This module uses the tool `slqcmd` as a local provisioner to connect and inject 
 Therefore, the following dependencies must be installed beforehand on your machine:
 
 1. Microsoft [OBDC Driver 13.1](https://www.microsoft.com/en-us/download/details.aspx?id=53339).
-2. Install **sqlcmd**, included in [Microsoft Command Line Utilities 13.1 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=53591&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+2. Install the Microsoft [sqlcmd](https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility) utility.
 
 ## Usage
 
