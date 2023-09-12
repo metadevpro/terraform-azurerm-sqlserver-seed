@@ -20,6 +20,9 @@ resource "azurerm_sql_database" "db" {
   create_mode                      = "Default"
 
   provisioner "local-exec" {
-    command = "sqlcmd -U ${var.sql_admin_username} -P ${var.sql_admin_password} -S ${var.db_server_fqdn} -d ${var.db_name} -i ${var.init_script_file} -o ${var.log_file}"
+    environment = {
+      SQLCMDPASSWORD = var.sql_admin_password # Required so that the password does not spill to console when the resource fails
+    }
+    command = "sqlcmd -U ${var.sql_admin_username} -S ${var.db_server_fqdn} -d ${var.db_name} -i ${var.init_script_file} -o ${var.log_file}"
   }
 }
